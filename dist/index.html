@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <div class="contenido">
+        <header>
+            <h1>Atención Semanal</h1>    
+        </header>
+        <div class="contenido-principal">
+            <h2>Añade los animales atendidos</h2>
+            <div class="formulario">
+                <form id="formulario-inputs"action="">
+                    <div> <label for="">Dueño:</label></div>
+                    <div><input type="text" id="duenoNombre" placeholder="ej. 'Ricardo Sanchez'"></div>
+                    <div> <label for="">Dirección:</label></div>
+                    <div><input type="text" id="direccion" placeholder="ej. 'Peru 333'"></div>
+                    <div> <label for="">Teléfono:</label></div>
+                    <div><input type="text" id="telefono" placeholder="ej. '940277890'"></div>
+                    <div><label for="">Nombre:</label></div>
+                    <div><input type="text" id="mascota" placeholder="ej. 'Copito'"></div>
+                    <div><label for="">Tipo:</label></div>
+                    <select name="animales" id="Tipo">
+                        <option value="">ej. Gato</option>
+                        <option value="1">Gato</option>
+                        <option value="2">Perro</option>
+                        <option value="3">Conejo</option>
+                        <option value="4">Hurón</option>
+                        <option value="5">Ave</option> 
+                    </select>
+                    <div><label for="">Motivo de visita:</label></div>
+                    <select name="motivos" id="Visita">
+                        <option value="">ej. Vacunas</option>
+                        <option value="Enfermedad">Enfermedad</option>
+                        <option value="Vacunas">Vacunas</option>
+                        <option value="Control">Control</option>
+                        <option value="Exámenes">Exámenes</option>
+                        <option value="Peluquería">Peluquería</option> 
+                    </select>
+                    <div><input id="button" type="button" value="Agregar"></div>
+                </form>
+            </div>
+
+            <h2>Listado de Atenciones</h2>
+            <p id="imprimir"></p>
+        </div>
+    
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
